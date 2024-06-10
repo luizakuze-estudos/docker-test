@@ -36,7 +36,7 @@
 | --------------------------------------------------- | --------------------------------------------------- |
 | Rodar conteiner em background, não trava o terminal | docker run -d  app:v1                               |
 | Rodar conteiner com um noem específico              | docker run -d --name <name-conteiner>               |
-| Verificar os logs, quando há erros                  | docker logs <id-conteiner>                          |
+| Verificar os logs, quando há erros                  | docker logs <id-conteiner>                          |git
 | Mapear e executar conteiner                         | docker run -d -p <host-port>:<docker-port>          |
 | Parar execução do conteiner                         | docker stop <conteiner-name>                        |
 | Iniciar conteiner que já existe                     | docker start <conteiner-name>                       |

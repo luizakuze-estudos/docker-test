@@ -1,6 +1,6 @@
 # Parte 1
 | Ação                                                                       | Comando                                           |
-|----------------------------------------------------------------------------|---------------------------------------------------|
+| -------------------------------------------------------------------------- | ------------------------------------------------- |
 | Procurando por imagens no Docker Hub                                       | `docker search openjdk`                           |
 | Baixando uma imagem do Docker Hub                                          | `docker pull ubuntu`                              |
 | Listando as imagens armazenadas (baixadas ou geradas) em seu computador    | `docker image ls`                                 |
@@ -48,7 +48,14 @@
 | Adicionar o volume                                  | `docker run -dp <port>:<port> --name <conteiner-name> -v <volume-name>:/app/<dir> image-name>:<tag-name>` |
 | Copiando arquivo do conteiner para diretório atual  | `docker cp <name-conteiner>:<origin-dir>:.`                                                               |
 | Copiando arquivo do conteiner para outro diretório  | `docker cp <name-conteiner>:<origin-dir>:<new-dir>`                                                       |
-|                                                     |                                                                                                           |
-|                                                     |                                                                                                           |
+
+
+# Parte 4 - Docker Compose
+| Ação                                    | Comando                          |
+| --------------------------------------- | -------------------------------- |
+| Construir conteiners                    | `docker compose up`              |
+| Construir conteiners sem trvar terminal | `docker compose up -d`           |
+| Constroi uma imagem                     | `docker build -t <image-name> .` |
+| Verifica logs da composição             | `docker compose logs .`          |
 
 _nota: `docker run` para criar conteiner (+iniciar) e `docker start` se já existe (+iniciar)_
